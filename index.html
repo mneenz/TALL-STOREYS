@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image:url(images/Apartments_Background.jpg);background-size:100% auto;">
+	<head>
+		<title>Tall Storeys</title>
+		<meta name="description" content="Match up new developments with their branding.">
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" media="all" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" media="all" href="./css/reset.css">
+		<!-- <link rel="stylesheet/less" type="text/css" href="./css/style.less" /> -->
+	</head>
+
+	<body class="game">
+		<article id="content">
+			<header id="header">
+				<a class="logo" href="./index.html" title="Tall Storeys"><img title="Tall Storeys" alt="tall-storeys" src="images/header.png" width="628" height="156"></a>
+				<div id="social-media">
+					<button id="cheat" value="0" title="Cheat"></button>
+					<a class="link" target="_blank" href="http://www.letterbox.net.au/read/writing/tall-storeys-2/" class="desktoplink" title="Tall Storeys Article Link"><img src="images/about.png" width="247" height="35"></a>
+					<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tallstoreys.com.au/" title="Facebook" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://tallstoreys.com.au/','Facebook','width=600,height=400')"><img src="images/facebook.png" width="26" height="26"></a>
+					<a href="https://twitter.com/home?status=I%20just%20played%20the%20Tall%20Storeys%20game!" title="Twitter" target="popup" onclick="window.open('https://twitter.com/home?status=I%20just%20played%20the%20Tall%20Storeys%20game!','name','width=600,height=400')"><img src="images/twitter.png" width="38" height="26"></a>
+
+					<span id="stopwatch">00:00:00</span>
+
+					<div id="fb-root"></div>
+				</div>
+			</header>
+			<section id="intro-wrapper">
+				<div class="left">
+					<p>It’s a familiar story to most graphic designers: a paper rep calls by the studio, and after a little chit-chat they invariably bring out their latest printed sample that displays their stock at its best. An elegant, beautifully crafted, masterfully printed prospectus, its lush pages overflowing with the sheen of multi-layered varnishes and foils. What at first appears to be a print piece for a perfume or luxury handbag store inevitably ends up being for something quite different: a new apartment development.</p>
+					<p>We live in a world where when buying a house, the cultural references mean more than the architecture itself. Do you think that you could match an apartment block with it's branding?</p>
+				</div>
+				<div class="right">
+					<h1>Instructions</h1><p>Try to match the developments with their branding by clicking. The game is time based and if you are fast enough, your score will end up on the leaderboard. If you find the game too hard, you can use the cheat button. Start by filling out your nickname below and press play. Good luck!</p>
+					<p><input class="name" type="text" name="name"> <button id="name" type="button">Play game</button></p>
+					<p class="error"></p>
+				</div>
+			</section>
+  		<section id="developments" onclick='Timer.Timer.play();'>
+      	<span id="successMessage">
+					<a href="./index.html" title="Play again"><img src="images/play-again.png" width="auto" height="35"></a>
+					<a href="./leaderboard.html" title="Leaderboard"><img src="images/leaderboard.png" width="auto" height="35"></a>
+  			</span>
+				<div id="development1" class="artsoul"><img src="./images/placement_image.png" width="100%" height="auto" alt="Art + Sould Development"></div>
+        <div id="development2" class="bouliste"><img src="./images/placement_image.png" width="100%" height="auto" alt="Bouliste Development"></div>
+        <div id="development3" class="jacques"><img src="./images/placement_image.png" width="100%" height="auto" alt="Jacques Development"></div>
+        <div id="development4" class="luxton"><img src="./images/placement_image.png" width="100%" height="auto" alt="Luxton Development"></div>
+        <div id="development5" class="b"><img src="./images/placement_image.png" width="100%" height="auto" alt="B Development"></div>
+        <div id="development6" class="c3"><img src="./images/placement_image.png" width="100%" height="auto" alt="C3 Development"></div>
+        <div id="development7" class="essence"><img src="./images/placement_image.png" width="100%" height="auto" alt="Essence Development"></div>
+        <div id="development8" class="haus"><img src="./images/placement_image.png" width="100%" height="auto"  alt="Haus Development"></div>
+        <div id="development9" class="queens"><img src="./images/placement_image.png" width="100%" height="auto"  alt="Queens Development"></div>
+			</section>
+  		<section id="brandings" onclick='Timer.Timer.play();'>
+      	<div id="branding1" class="artsoul"><img src="./images/placement_image.png" width="100%" height="auto" alt="Art + Sould Branding"></div>
+        <div id="branding2" class="bouliste"><img src="./images/placement_image.png" width="100%" height="auto" alt="Bouliste Branding"></div>
+        <div id="branding3" class="jacques"><img src="./images/placement_image.png" width="100%" height="auto" alt="Jacques Branding"></div>
+        <div id="branding4" class="luxton"><img src="./images/placement_image.png" width="100%" height="auto" alt="Luxton Branding"></div>
+        <div id="branding5" class="b"><img src="./images/placement_image.png" width="100%" height="auto" alt="B Branding"></div>
+        <div id="branding6" class="c3"><img src="./images/placement_image.png" width="100%" height="auto" alt="C3 Branding"></div>
+        <div id="branding7" class="essence"><img src="./images/placement_image.png" width="100%" height="auto" alt="Essence Branding"></div>
+        <div id="branding8" class="haus"><img src="./images/placement_image.png" width="100%" height="auto" alt="Haus Branding"></div>
+        <div id="branding9" class="queens"><img src="./images/placement_image.png" width="100%" height="auto" alt="Queens Branding"></div>
+      </section>
+
+			<footer id="social-media">
+
+				<!--Facebook Share-->
+				<script>
+					(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+							if (d.getElementById(id)) return;
+								js = d.createElement(s); js.id = id;
+								js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=204601976307748&version=v2.0";
+								fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));
+				</script>
+
+				<!--jQuery Library-->
+				<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<!--My JS file -->
+				<script type="text/javascript" src="./js/javascript.js"></script>
+				<!--Timer -->
+				<script type="text/javascript" src="./js/jquery.timer.js"></script>
+				<!--Firebase -->
+				<script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+				<!--Less-->
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+				<!--Typekit
+				<script src="//use.typekit.net/ssu2zqx.js"></script>
+				<script>try{Typekit.load();}catch(e){}</script>
+
+				Google Analytics
+				<script>
+					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+						m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+					ga('create', 'UA-60044486-1', 'auto');
+					ga('send', 'pageview');
+				</script>-->
+
+			</footer>
+
+		</article>
+	</body>
+</html>
